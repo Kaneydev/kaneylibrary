@@ -162,3 +162,23 @@ a:focus-visible {
 .nav a:hover { color: var(--accent); }
 .logo { color: var(--text); font-weight: 700; }
 
+/* ===== MOBILE NAV FIX ===== */
+@media (max-width: 699px) {
+  .nav {
+    padding: 0.6rem 1rem;
+    gap: 0.25rem;
+  }
+  .nav nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    gap: 1.1rem;
+    font-size: 0.9rem;
+    padding-bottom: 0.2rem;
+    scrollbar-width: none;
+  }
+  .nav nav::-webkit-scrollbar { display: none; }
+  .nav nav a { white-space: nowrap; }
+  html { scroll-padding-top: 90px; }
+}
+
