@@ -23,6 +23,6 @@ HTML5 · CSS3 · Git & GitHub · GitHub Pages
 
 ## 🤝 Contact
 - GitHub: [Kaneydev](https://github.com/Kaneydev)
-- LinkedIn: [Kaney Amsalu](https://www.linkedin.com/in/haimanotamsalu 
+- - LinkedIn: [Kaney Amsalu](https://www.linkedin.com/in/haimanotamsalu)
 
 *Learning by building, one project at a time.* 🚀
