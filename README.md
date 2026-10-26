@@ -14,8 +14,9 @@ Hi, I'm Kaney 👋 A second-year Software Engineering student building responsiv
 | Survey Form | Structured forms and user input | [Open](https://kaneydev.github.io/kaneylibrary/portfolio/survey-form/) |
 
 ## 🛠️ Tech
-🎓 [freeCodeCamp Responsive Web Design Certification](https://freecodecamp.org/certification/haimanotamsalu/responsive-web-design-v9) · 96% · Oct 2026
-HTML5 · CSS3 · Git & GitHub · GitHub Pages
+🎓 [freeCodeCamp Responsive Web Design Certification](https://freecodecamp.org/certification/haimanotamsalu/responsive-web-design-v9) · 96% · Oct 2026.
+
+-HTML5 · CSS3 · Git & GitHub · GitHub Pages
 
 ## 🎯 Next Up
 - Improve and verify responsiveness across all projects.
