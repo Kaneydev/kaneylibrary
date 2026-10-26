@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kaney Survey Form: a responsive, accessible survey built with pure HTML5 and CSS3." />
+  <title>Kaney Survey Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">Kaney Survey Form</h1>
+      <p id="description">Tell me a little about yourself and your interests. It takes about a minute, and every answer helps me learn what people enjoy.</p>
+    </header>
+
+    
+    <form action="https://api.web3forms.com/submit" method="POST" id="survey-form">
+      <input type="hidden" name="access_key" value="MY_KEY" />
+      <input type="hidden" name="subject" value="New Kaney survey response" />
+      <input type="hidden" name="from_name" value="Friends Survey Form" />
+      <input type="checkbox" class="botcheck" name="botcheck" tabindex="-1" autocomplete="off" />
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="field">
+          <label id="name-label" for="name">Full name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" placeholder="e.g. Batan Nunas" autocomplete="name" required minlength="2" />
+        </div>
+        <div class="field">
+          <label id="email-label" for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" placeholder="lilita@example.com" autocomplete="email" required />
+        </div>
+        <div class="field">
+          <label id="number-label" for="number">Age <span class="req">*</span></label>
+          <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="100" inputmode="numeric" required />
+        </div>
+        <div class="field">
+          <label for="occupation">Current status</label>
+          <select id="occupation" name="occupation">
+            <option value="" selected disabled>Select one…</option>
+            <option value="Student">Student</option>
+            <option value="Employed">Employed</option>
+            <option value="Freelancer">Freelancer</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Interests &amp; Hobbies</legend>
+        <div class="field">
+          <label for="dropdown">Which type of hobby do you like most?</label>
+          <select id="dropdown" name="dropdown">
+            <option value="Participating in sports" selected>Participating in sports</option>
+            <option value="Watching YouTube and TikTok videos">Watching YouTube and TikTok videos</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Coding and building projects">Coding and building projects</option>
+            <option value="Music and art">Music and art</option>
+          </select>
+        </div>
+
+        <div class="field" role="radiogroup" aria-labelledby="movie-q">
+          <label id="movie-q">Favorite movie type <span class="req">*</span></label>
+          <div class="options two">
+            <label class="option" for="tech-movie"><input type="radio" id="tech-movie" name="movie" value="tech-movie" required /> Tech Movie</label>
+            <label class="option" for="romantic-movie"><input type="radio" id="romantic-movie" name="movie" value="romantic-movie" /> Romantic Movie</label>
+            <label class="option" for="action-movie"><input type="radio" id="action-movie" name="movie" value="action-movie" /> Action Movie</label>
+            <label class="option" for="comedy-movie"><input type="radio" id="comedy-movie" name="movie" value="comedy-movie" /> Comedy Movie</label>
+          </div>
+        </div>
+
+        <div class="field" role="group" aria-labelledby="hobby-q">
+          <label id="hobby-q">What do you enjoy doing? (select all that apply)</label>
+          <div class="options two">
+            <label class="option" for="walking"><input type="checkbox" id="walking" name="hobie" value="walking" /> Walking for enjoyment</label>
+            <label class="option" for="reading"><input type="checkbox" id="reading" name="hobie" value="reading" /> Reading intellectual books</label>
+            <label class="option" for="running"><input type="checkbox" id="running" name="hobie" value="running" /> Running in the morning</label>
+            <label class="option" for="riding"><input type="checkbox" id="riding" name="hobie" value="riding" /> Riding on the weekend</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Feedback</legend>
+        <div class="field">
+          <label id="rating-label">How would you rate this survey?</label>
+          <div class="rating" role="radiogroup" aria-labelledby="rating-label">
+            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars">★</label>
+            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars">★</label>
+            <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars">★</label>
+            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars">★</label>
+            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">★</label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="comments">Comments or suggestions</label>
+          <textarea id="comments" name="comments" maxlength="500" placeholder="Anything you'd like to share…"></textarea>
+          <div class="hint">Optional, up to 500 characters.</div>
+        </div>
+      </fieldset>
+
+      <p class="privacy">Your name and email are only used so I can read your feedback. I won't share them.</p>
+      <div class="field">
+        <label class="option" for="consent"><input type="checkbox" id="consent" name="consent" value="yes" required /> I agree to my responses being stored for this survey. <span class="req">*</span></label>
+      </div>
+
+      <div class="actions">
+        <button type="submit" id="submit">Submit Your Survey</button>
+        <button type="reset" id="reset">Clear</button>
+      </div>
+    </form>
+
+    <footer><p>&copy; 2026 Kaney. Built by Kaney with HTML5 &amp; CSS3</footer>
+  </div>
+</body>
+</html>
