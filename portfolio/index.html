@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haimanot Amsalu | Aspiring Frontend Developer</title>
-  <meta name="description" content="Portfolio of Kaney, a software engineering student learning frontend development.">
+  <title>Haimanot Amsalu (Kaney) | Aspiring Frontend Developer</title>
+  <meta name="description" content="Portfolio of Haimanot Amsalu (Kaney), a software engineering student learning frontend development.">
+  <meta property="og:title" content="Haimanot Amsalu (Kaney) | Aspiring Frontend Developer">
+  <meta property="og:description" content="Software engineering student building clean, responsive websites.">
+  <meta property="og:image" content="https://kaneydev.github.io/kaneylibrary/portfolio/images/profile.jpg">
+  <meta property="og:url" content="https://kaneydev.github.io/kaneylibrary/portfolio/">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +16,7 @@
   <!-- NAV -->
   <header class="nav">
     <a href="#home" class="logo">Haimanot Amsalu</a>
-    <nav>
+    <nav aria-label="Main">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -24,16 +28,28 @@
 
   <main>
 
-    <!-- HERO section -->
+    <!-- HERO -->
     <section id="home" class="hero">
-      <p class="eyebrow">Software Engineering Student</p>
-      <h1>Hi, I'm <span class="accent">Haimanot(Kaney)</span>.</h1>
-      <h2>Aspiring Frontend Developer</h2>
-      
-      <p class="lead">I'm a second-year software engineering student building clean, responsive websites with HTML and CSS. I've completed my core CSS layout and Responsive Web design learning, and I'm now moving into JavaScript while learning Git, GitHub, and deployment, and I'm also documenting every step of the process and Journey.</p>
-      <div class="buttons">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      <figure class="hero-photo">
+        <img
+          src="images/profile.jpg"
+          alt="Portrait of Haimanot Amsalu"
+          width="400" height="400"
+          fetchpriority="high"
+          decoding="async">
+      </figure>
+
+      <div class="hero-text">
+        <p class="eyebrow">Software Engineering Student</p>
+        <h1>Hi, I'm <span class="accent">Haimanot (Kaney)</span>.</h1>
+        <h2>Aspiring Frontend Developer</h2>
+
+        <p class="lead">I'm a second-year software engineering student building clean, responsive websites with HTML and CSS. I've completed my core CSS layout and Responsive Web Design learning, and I'm now moving into JavaScript while learning Git, GitHub, and deployment. I'm documenting every step of the journey.</p>
+
+        <div class="buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
       </div>
     </section>
 
@@ -43,49 +59,39 @@
       <div class="grid-3">
         <article class="card">
           <h3>Who I am</h3>
-          <!-- description about me -->
-          <p>I'm a second-year Software engineering Student who enjoys turning ideas into working interfaces.</p>
+          <p>I'm a second-year software engineering student who enjoys turning ideas into working interfaces.</p>
         </article>
         <article class="card">
           <h3>What I'm learning</h3>
-          
-          <p>  I am Learning JavaScript along with Git/GitHub Version Control and deployment</p>
+          <p>JavaScript, along with Git/GitHub version control and deployment.</p>
         </article>
         <article class="card">
           <h3>Where I'm headed</h3>
-          <!-- My headline and plan -->
           <p>Freelance frontend work first, then full-stack, and eventually building AI-powered products.</p>
         </article>
       </div>
     </section>
 
-    <!-- SKILLS which I have -->
-    
-<section id="skills" class="section">
-  <h2 class="section-title">Skills</h2>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Flexbox</li>
+        <li>CSS Grid</li>
+        <li>Responsive Web Design</li>
+      </ul>
+      <p class="muted">Currently learning: JavaScript, Git, GitHub, version control and deployment.</p>
+    </section>
 
-  <ul class="skills">
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>Flexbox</li>
-    <li>CSS Grid</li>
-    <li>Responsive Web Design</li>
-  </ul>
-
-  <p class="muted">
-    Currently learning: JavaScript, Git, GitHub,
-    version control and deployment.
-  </p>
-</section>
-
-    <!-- Projects which I did -->
+    <!-- PROJECTS -->
     <section id="projects" class="section">
       <h2 class="section-title">Projects</h2>
       <div class="grid-3">
 
         <article class="card">
           <h3>Landing Page 1</h3>
-          <!--Discription about my landing page one -->
           <p>A responsive landing page built with semantic HTML and CSS.</p>
           <p class="tags">HTML · CSS · Responsive</p>
           <div class="links">
@@ -96,7 +102,6 @@
 
         <article class="card">
           <h3>Landing Page 2</h3>
-          <!-- --Discription about landing page2 -->
           <p>A second landing page focused on layout with Flexbox and Grid.</p>
           <p class="tags">HTML · CSS · Grid</p>
           <div class="links">
@@ -107,11 +112,10 @@
 
         <article class="card">
           <h3>Kaney Survey Form</h3>
-          <!-- --Discription about Survey Form-->
           <p>An HTML survey form to collect feedback from friends.</p>
           <p class="tags">HTML · Forms</p>
           <div class="links">
-            <a href="survey-form/index.html" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="survey-form/index.html" target="_blank" rel="noopener">Live Demo</a>
             <a href="https://github.com/Kaneydev/kaneylibrary" target="_blank" rel="noopener noreferrer">Code</a>
           </div>
         </article>
@@ -119,67 +123,57 @@
       </div>
     </section>
 
-    <!-- My LEARNING JOURNEY -->
+    <!-- LEARNING JOURNEY -->
     <section id="journey" class="section">
       <h2 class="section-title">Learning Journey</h2>
-      
-  <ol class="timeline">
-  <li class="done">
-    <strong>HTML</strong>
-    Fundamentals and practical projects
-  </li>
-  <li class="done">
-    <strong>CSS3 &amp; Flexbox</strong>
-    Styling and Layout Techniques
-    </li>
-    <li class="done">
-    <strong>CSS Grid &amp; Responsive Design</strong>
-    Responsive layouts and Cross-screen Design
-    </li>
-    <li class="current">
-    <strong>JavaScript</strong>
-    Programming fundamentals and interactivity
-    </li>
-    <li class="current">
-    <strong>Git, GitHub &amp; Deployment</strong>
-    Learning version control and publishing projects
-   </li>
-   <li>
-    <strong>React</strong>
-    Planned after building a solid JavaScript foundation
-    </li>
-  </ol>
+      <ol class="timeline">
+        <li class="done">
+          <strong>HTML</strong>
+          Fundamentals and practical projects
+        </li>
+        <li class="done">
+          <strong>CSS3 &amp; Flexbox</strong>
+          Styling and layout techniques
+        </li>
+        <li class="done">
+          <strong>CSS Grid &amp; Responsive Design</strong>
+          Responsive layouts and cross-screen design
+        </li>
+        <li class="current">
+          <strong>JavaScript</strong>
+          Programming fundamentals and interactivity
+        </li>
+        <li class="current">
+          <strong>Git, GitHub &amp; Deployment</strong>
+          Learning version control and publishing projects
+        </li>
+        <li>
+          <strong>React</strong>
+          Planned after building a solid JavaScript foundation
+        </li>
+      </ol>
+    </section>
 
-</section>
-        <!--Certificates & Achievements-->
-       
-<section id="certificates" class="section">
-  <h2 class="section-title">Certificates &amp; Achievements</h2>
-
-  <article class="card">
-    <h3>Responsive Web Design V9 (New)</h3>
-    <p>
-      freeCodeCamp — completed coursework and projects
-      covering HTML, CSS, and responsive web design.
-    </p>
-    <div class="links">
-      <a href="https://freecodecamp.org/certification/haimanotamsalu/responsive-web-design-v9"
-         target="_blank"
-         rel="noopener noreferrer">
-        View Certificate
-      </a>
-    </div>
-  </article>
-</section>
+    <!-- CERTIFICATES & ACHIEVEMENTS -->
+    <section id="certificates" class="section">
+      <h2 class="section-title">Certificates &amp; Achievements</h2>
+      <article class="card">
+        <h3>Responsive Web Design V9 (New)</h3>
+        <p>freeCodeCamp — completed coursework and projects covering HTML, CSS, and responsive web design.</p>
+        <div class="links">
+          <a href="https://freecodecamp.org/certification/haimanotamsalu/responsive-web-design-v9"
+             target="_blank" rel="noopener noreferrer">View Certificate</a>
+        </div>
+      </article>
+    </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section">
       <h2 class="section-title">Contact Me</h2>
-      <p class="lead">Open to Learning Opportunities and Small Freelance Projects.</p>
+      <p class="lead">Open to learning opportunities and small freelance projects.</p>
       <div class="buttons">
-        
-        <a class="btn btn-outline" href="https://github.com/Kaneydev" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn btn-outline" href="https://linkedin.com/in/haimanotamsalu" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-outline" href="https://github.com/Kaneydev" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn btn-outline" href="https://linkedin.com/in/haimanotamsalu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a class="btn btn-primary" href="mailto:kaneams16@gmail.com">Email</a>
       </div>
     </section>
@@ -187,8 +181,7 @@
   </main>
 
   <footer class="footer">
-    <p>&copy; 2026 Kaney(Haimanot.
-      A). Built with HTML &amp; CSS.</p>
+    <p>&copy; 2026 Haimanot Amsalu (Kaney). Built with HTML &amp; CSS.</p>
   </footer>
 
 </body>
